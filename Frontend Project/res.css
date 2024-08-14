@@ -1,0 +1,442 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@media screen and (min-width:600px){
+header{
+    background-image: url("https://images.pexels.com/photos/137039/pexels-photo-137039.jpeg");
+    background-position:center;
+    background-position-y:bottom;
+    background-attachment: fixed;
+   
+    background-size: cover;
+    height:65vh ;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
+
+    position: relative;
+}
+.white-box{
+    height: 40px;
+    width: 40px;
+    
+    position: relative;
+    top:25px;
+
+    border: rgb(255, 255, 255) solid;
+    box-shadow:-15px -15px  rgb(255, 255, 255);
+}
+header>div{
+    position: relative;
+    top:30vh;
+
+}
+.menu-bar{
+    display: none;
+
+}
+
+.pizza:focus-within{
+    background-color: aqua;
+    color: palevioletred;
+    cursor: pointer;
+
+}
+.salad:focus-within{
+    background-color: aqua;
+    color: palevioletred;
+    cursor: pointer;
+
+}
+.noodles:focus-within{
+
+    background-color: aqua;
+    color: palevioletred;
+    cursor: pointer;
+}
+.pizza:hover{
+    background-color: rgb(16, 207, 29);
+    color: rgb(35, 27, 195);
+    cursor: pointer;
+
+}
+.salad:hover{
+    background-color: rgb(16, 207, 29);
+    color: rgb(35, 27, 195);
+    cursor: pointer;
+
+}
+.noodles:hover{
+
+    background-color: rgb(16, 207, 29);
+    color: rgb(35, 27, 195);
+    cursor: pointer;
+}
+
+
+
+
+.navl_simple{
+    font-size: 5vw;
+}
+
+.navr{
+    display: flex;
+    gap:5vw;
+    margin-top: 20px;
+   font-size: larger;    
+} 
+a{
+  
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+.navl{
+    display: flex;
+    gap:20px;
+}
+
+main{
+    text-align: center;
+    padding: 0 15vw;
+}
+
+.main_buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+    justify-content: center;
+
+
+    position: relative;
+}
+
+.main_buttons>button{
+    background-color: rgb(250, 137, 137);
+    padding: 10px;
+    font-size: larger;
+    border:solid rgb(0, 163, 30);
+    box-shadow:2px 2px 2px black ;
+    color: rgb(64, 248, 64);
+   
+}
+
+section{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    
+    justify-content:space-around;
+    row-gap: 20px;
+    column-gap: 1vw;
+    padding: 10px;  
+   
+}
+section.first_section ,section.second_section , section.third_section{
+    grid-column-start: 1;
+    grid-column-end:4 ;
+    display: none;
+}
+
+.pizza:focus-within ~ section.first_section{
+    display:grid;
+    
+}
+.salad:focus-within ~ section.second_section{
+    display:grid;
+   
+}
+.noodles:focus-within ~ section.third_section{
+    display:grid;
+}
+
+
+
+
+.food{
+    width:22vw;
+    height: 22vw;
+    
+}
+.item_name{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(0, 128, 109);
+}
+
+.cost{
+    color: rgb(2, 6, 124);
+    text-shadow:0px 0px 1px ;
+    vertical-align:bottom;
+    
+  
+}
+
+.down{
+    display: grid;
+    grid-template-columns:auto auto;
+    gap:10px;
+    padding: 10px;
+  
+    
+}
+
+.avacado{
+    width:47vw;
+
+}
+.ava , .avapara{
+    display: inline;
+    width: 45vw;
+    
+}
+
+.avapara{
+    position: relative;
+
+}
+.readmore{
+    position: absolute;;
+    right: 0;
+    bottom: 10px;
+    border: 2px dotted;
+    padding: 5px;
+}
+
+
+}
+
+
+
+
+/*-----------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------*/
+
+@media screen and (max-width:600px){
+    header{
+        background-image: url("https://images.pexels.com/photos/137039/pexels-photo-137039.jpeg");
+        background-position:center;
+        background-position-y:bottom;
+        background-attachment: fixed;
+       
+        background-size: cover;
+        height:65vh ;
+        color: aliceblue;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        padding: 10vw;
+    
+        position: relative;
+    }
+    .white-box{
+        height: 40px;
+        width: 40px;
+        
+        position: relative;
+        top:25px;
+    
+        border: rgb(255, 255, 255) solid;
+        box-shadow:-15px -15px  rgb(255, 255, 255);
+    }
+    header>div{
+        position: relative;
+        top:30vh;
+    
+    }
+    .menu-bar{
+        width:7vh;
+        height: 7vh;
+        background-color:white ;
+        
+        border-radius: 10px;
+        font-size: 40px;
+        color: black;
+        
+        
+    }
+
+    .menu-bar:focus-within  ~ div{
+        display:block;
+        margin-bottom: 10px;
+        background-color: lightpink;
+        text-align: center;
+    }
+    
+    
+    
+    
+    .navl_simple{
+        font-size: 5vw;
+    }
+    /*
+    .navr{
+        display: flex;
+        gap:5vw;
+        margin-top: 20px;
+       font-size: larger;    
+    }*/
+    a{
+      
+        color: aliceblue;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        text-decoration:none;
+    }
+    
+    .navl{
+        display: flex;
+        gap:20px;
+    }
+    
+    main{
+        text-align: center;
+        padding: 0 15vw;
+    }
+    
+    .main_buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:10px;
+        justify-content: center;
+    
+    
+        position: relative;
+    }
+    
+    .main_buttons>button{
+        background-color: rgb(250, 137, 137);
+        padding: 10px;
+        font-size: larger;
+        border:solid rgb(0, 163, 30);
+        box-shadow:2px 2px 2px black ;
+        color: rgb(64, 248, 64);
+       
+    }
+    
+    section{
+        display:block;
+        grid-template-columns:1fr 1fr 1fr 1fr;
+        
+        justify-content:space-around;
+        row-gap: 20px;
+        column-gap: 1vw;
+        padding: 10px;  
+       
+    }
+    section.first_section ,section.second_section , section.third_section{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        display: none;
+    }
+    
+    .pizza:focus-within ~ section.first_section{
+        display:block;
+    }
+    .salad:focus-within ~ section.second_section{
+        display:block;
+       
+    }
+    .noodles:focus-within ~ section.third_section{
+        display:block;
+    }
+    
+    .pizza:focus-within{
+        background-color: aqua;
+        color: palevioletred;
+        cursor: pointer;
+
+    }
+    .salad:focus-within{
+        background-color: aqua;
+        color: palevioletred;
+        cursor: pointer;
+
+    }
+    .noodles:focus-within{
+
+        background-color: aqua;
+        color: palevioletred;
+        cursor: pointer;
+    }
+    .pizza:hover{
+        background-color: rgb(16, 207, 29);
+        color: rgb(35, 27, 195);
+        cursor: pointer;
+
+    }
+    .salad:hover{
+        background-color: rgb(16, 207, 29);
+        color: rgb(35, 27, 195);
+        cursor: pointer;
+
+    }
+    .noodles:hover{
+
+        background-color: rgb(16, 207, 29);
+        color: rgb(35, 27, 195);
+        cursor: pointer;
+    }
+    
+    
+    
+    
+    .food{
+        width:50vw;
+        height: 50vw;
+        
+    }
+    .item_name{
+        font-family: 'Times New Roman', Times, serif;
+        color:rgb(0, 128, 109);
+    }
+    
+    .cost{
+        color: rgb(2, 6, 124);
+        text-shadow:0px 0px 1px ;
+        vertical-align:bottom;
+        
+      
+    }
+    
+    .down{
+        
+        padding:0px 25vw;
+    }
+    
+    .avacado{
+        width:47vw;
+    
+    }
+    .ava , .avapara{
+        display: block;
+        width: 45vw;
+        
+    }
+    
+    .avapara{
+        position: relative;
+    
+    }
+    .readmore{
+        position: relative;
+        right: 0;
+        left:14vw;
+        
+        border: 2px dotted;
+        padding: 5px;
+        width: fit-content;
+        text-align: center;
+
+        background-color: aqua;
+    }
+    
+    
+    }
+    

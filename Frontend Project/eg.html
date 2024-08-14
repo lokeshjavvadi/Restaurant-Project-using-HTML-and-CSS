@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Selector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .food-selector {
+            position: relative;
+            display: inline-block;
+        }
+
+        .food-selector input[type="radio"] {
+            display: none;
+        }
+
+        .food-selector label {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .food-selector button {
+            padding: 10px 20px;
+            background-color: #ccc;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .food-selector button:hover {
+            background-color: #f90;
+            border-color: #f90;
+            color: white;
+        }
+
+        .food-images img {
+            display: none;
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 5px solid #f90;
+        }
+
+        /* Display images based on radio button checked state */
+        #pizza:checked ~ .food-images .pizza,
+        #salad:checked ~ .food-images .salad,
+        #noodles:checked ~ .food-images .noodles {
+            display: block;
+        }
+
+        /* Button highlighting when selected */
+        #pizza:checked + label button,
+        #salad:checked + label button,
+        #noodles:checked + label button {
+            background-color: #f90;
+            border-color: #f90;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="food-selector">
+        <input type="radio" id="pizza" name="food" checked>
+        <label for="pizza">
+            <button type="button">Pizza</button>
+        </label>
+
+        <input type="radio" id="salad" name="food">
+        <label for="salad">
+            <button type="button">Salad</button>
+        </label>
+
+        <input type="radio" id="noodles" name="food">
+        <label for="noodles">
+            <button type="button">Noodles</button>
+        </label>
+    </div>
+
+    <div class="food-images">
+        <img src="https://theawesomedaily.com/wp-content/uploads/2016/09/pictures-of-pizza-23-1.jpg" alt="Pizza" class="pizza">
+        <img src="https://www.wikihow.com/images/e/e0/Make-a-Healthy-Salad-that-Tastes-Good-Intro.jpg" alt="Salad" class="salad">
+        <img src="http://www.servedfromscratch.com/wp-content/uploads/2016/04/IMG_7450.jpg" alt="Noodles" class="noodles">
+    </div>
+
+</body>
+</html>
+<section class="first_section">
+
+    <div>
+        <img class="food" src="https://2.bp.blogspot.com/-NdzU1ATpZkk/WGqyPEfiW8I/AAAAAAAAfBI/agPNTNSJTfAcqQ6wKjU-lj3v23KDsA2FACLcB/s1600/Easy-Supreme-French-Bread-Pizza%2B2.JPG" alt="no">
+        <div class="item_name">French Bread</div>
+        <div class="data">French bread sliced lengthwise, tomato sauce, cheese, pepperoni</div>
+        <div class="cost">$45/$55</div>
+    </div>
+    <div>
+        <img class="food" src="http://images.heb.com/is/image/HEBGrocery/recipe-hm-large/baked-ziti-pizza-pie-recipe.jpg" alt="no">
+        <div class="item_name">Baked Ziti</div>
+        <div class="data">Ziti, tomato sauce, ricotta, mozzarella</div>
+        <div class="cost">$95/$99</div>
+    </div>
+    <div>
+        <img class="food" src="https://colavitarecipes.com/wp-content/uploads/2019/05/Pizza03.jpg" alt="no">
+        <div class="item_name">Grandma Slice</div>
+        <div class="data">Square slices with tomato sauce on top of cheese</div>
+        <div class="cost">$30</div>
+    </div>
+    <div>
+        <img class="food" src="https://allwaysdelicious.com/wp-content/uploads/2021/05/white-clam-pizza-la-horiz-3.jpg" alt="no">
+        <div class="item_name">White Clam Pie</div>
+        <div class="data">Littleneck clams, Pecorino-Romana, garlic, oregano, olive oil</div>
+        <div class="cost">$25.50</div>
+    </div>
+    <div>
+        <img class="food" src="https://www.askchefdennis.com/wp-content/uploads/2020/08/frutta-di-mare-10.jpg" alt="no">
+        <div class="item_name">Frutti Di Mare</div>
+        <div class="data">Tomato sauce, mussels on the half-shell, clams, octopus, squid, shrimp</div>
+        <div class="cost">$80.25</div>
+    </div>
+    <div>
+        <img class="food" src="https://www.foodrepublic.com/wp-content/uploads/2018/01/newyorkslice_pizza.jpg" alt="no">
+        <div class="item_name">NewYork Slice</div>
+        <div class="data">Thin crust, tomato sauce, cheese, oregano, chili flakes</div>
+        <div class="cost">$20/$40/$60</div>
+    </div>
+    <div>
+        <img class="food" src="https://estag.fimagenes.com/imagenesred/2466967_0.jpg?1" alt="no">
+        <div class="item_name">Chicago Pizza</div>
+        <div class="data">Crispy deep-dish crust, cheese, fresh tomato sauce</div>
+        <div class="cost">$94</div>
+    </div>
+    <div>
+        <img class="food" src="https://recipes.net/wp-content/uploads/2023/05/wolfgang-puck-smoked-salmon-pizza-recipe_6258cc910fa334f8348e4d5a46887456.jpeg" alt="no">
+        <div class="item_name">Puck's Smoked Salmon Pizza</div>
+        <div class="data">Crème fraîche, smoked salmon, black caviar, red onion, dill</div>
+        <div class="cost">$150</div>
+    </div>
+</section>

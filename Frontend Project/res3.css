@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+@media screen and (min-width:600px) {
+    
+
+header{
+    background-image: url("https://images.pexels.com/photos/137039/pexels-photo-137039.jpeg");
+    background-position:center;
+    background-position-y:bottom;
+    background-attachment: fixed;
+   
+    background-size: cover;
+    height:65vh ;
+    color: rgb(203, 220, 220);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
+
+    position: relative;
+}
+.white-box{
+    height: 40px;
+    width: 40px;
+    
+    position: relative;
+    top:25px;
+
+    border: rgb(255, 255, 255) solid;
+    box-shadow:-15px -15px  rgb(255, 255, 255);
+}
+header>div{
+    position: relative;
+    top:30vh;
+
+}
+
+
+
+
+
+.navl_simple{
+    font-size: 5vw;
+}
+
+.navr{
+    display: flex;
+    gap:5vw;
+    margin-top: 20px;
+   font-size: larger;    
+}
+
+.navl{
+    display: flex;
+    gap:20px;
+}
+.menu-bar{
+    display: none;
+}
+a{
+  
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-decoration:none;
+}
+.menu-bar>img{
+    width:7vh;
+    height: 7vh;
+    background-color:white ;
+    margin-top: -15px;
+    border-radius: 10px;
+    display: none;
+
+}
+
+main{
+    text-align: center;
+    padding: 0 15vw;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding:0 10vw;
+    justify-content: space-around;
+}
+
+input{
+    border: none;
+    border-bottom:1px solid;
+    width:100%;
+    font-size: larger;
+}
+.dummybreak{
+    display: none;
+}
+.details{
+    padding-right: 80px;
+}
+.details>div{
+    border: rgb(47, 255, 85) solid 2px;
+   
+    padding: 10px 20px;
+    color: aliceblue;
+    text-shadow: 1px 1px 1px black;
+    background-color: rgb(0, 255, 4);
+    
+    float:right;
+    
+}
+.message{
+    position: relative;
+    padding-bottom: 100px;
+    
+  
+}
+.logos{
+    display: flex;
+    gap:20px;
+
+}
+i{
+    color:green;
+}
+.logos>i{
+    color: rgb(128, 0, 0);
+    vertical-align: bottom;
+}
+
+.maps{
+    width: 95vw;
+    padding: 40px;
+}
+
+h2{
+    color:blue
+}
+
+}
+
+
+
+
+/*  ----------- mobile approach--------     */
+/*  ----------- mobile approach--------     */
+
+/*  ----------- mobile approach--------     */
+
+
+@media screen and (max-width:600px) {
+    
+
+    header{
+        background-image: url("https://images.pexels.com/photos/137039/pexels-photo-137039.jpeg");
+        background-position:center;
+        background-position-y:bottom;
+        background-attachment: fixed;
+       
+        background-size: cover;
+        height:65vh ;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        padding: 10vw;
+    
+        position: relative;
+    }
+    .white-box{
+        height: 40px;
+        width: 40px;
+        
+        position: relative;
+        top:25px;
+    
+        border: rgb(255, 255, 255) solid;
+        box-shadow:-15px -15px  rgb(255, 255, 255);
+    }
+    header>div{
+        position: relative;
+        top:40vh;
+    
+    }
+    
+    
+    
+    
+    
+    .navl_simple{
+        font-size: 5vw;
+    }
+
+
+     
+    .menu-bar{
+        width:7vh;
+        height: 7vh;
+        background-color:white ;
+        
+        border-radius: 10px;
+        font-size: 40px;
+        color: black;
+        
+        
+    }
+    .menu-bar:focus-within ~ div{
+        display:block;
+        margin-bottom: 10px;
+        background-color: lightpink;
+        text-align: center;
+    }
+  
+
+
+    /*
+    .navr{
+        display:flex;
+        gap:5vw;
+        margin-top: 20px;
+       font-size: larger;    
+    }
+    */
+    .navl{
+        display: flex;
+        gap:20px;
+    }
+    a{
+      
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        text-decoration:none;
+    }
+    
+    main{
+        text-align: center;
+        padding: 0 15vw;
+    }
+    section{
+        
+        padding:0 10vw;
+        
+    }
+    
+    input{
+        border: none;
+        border-bottom:1px solid;
+        width:100%;
+        font-size: larger;
+    }
+   
+    .details>div{
+        border: rgb(47, 255, 85) solid 2px;
+       
+        padding: 10px 20px;
+        color: aliceblue;
+        text-shadow: 1px 1px 1px black;
+        background-color: rgb(47, 255, 68);
+        text-align: center;  
+    }
+    .message{
+        position: relative;
+        padding-bottom: 100px;
+        
+      
+    }
+    .logos{
+        display: flex;
+        gap:20px;
+    
+    }
+    i{
+        color:green;
+    }
+    .logos>i{
+        color: rgb(128, 0, 0);
+        vertical-align: bottom;
+    }
+    
+    .maps{
+        width: 95vw;
+        padding: 40px;
+    }
+    
+    h2{
+        color:blue
+    }
+    
+    }
+  

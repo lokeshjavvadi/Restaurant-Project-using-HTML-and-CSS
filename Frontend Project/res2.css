@@ -1,0 +1,325 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+@media screen and (min-width:600px) {
+header{
+    background-image: url("https://images.pexels.com/photos/137039/pexels-photo-137039.jpeg");
+    background-position:center;
+    background-position-y:bottom;
+    background-attachment: fixed;
+   
+    background-size: cover;
+    height:65vh ;
+    color: rgb(203, 220, 220);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    padding: 10vw;
+
+    position: relative;
+}
+.white-box{
+    height: 40px;
+    width: 40px;
+    
+    position: relative;
+    top:25px;
+
+    border: rgb(255, 255, 255) solid;
+    box-shadow:-15px -15px  rgb(255, 255, 255);
+}
+header>div{
+    position: relative;
+    top:30vh;
+
+}
+
+
+
+
+.navl_simple{
+    font-size: 5vw;
+}
+
+.navr{
+    display: flex;
+    gap:5vw;
+    margin-top: 20px;
+   font-size: larger;    
+}
+.menu-bar{
+    display: none;
+}
+.navl{
+    display: flex;
+    gap:20px;
+}
+a{
+  
+    color: aliceblue;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+
+main{
+    text-align: center;
+    padding: 0 15vw;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 40px;
+    gap:30px;
+}
+
+section>div{
+    display: grid;
+    grid-template-columns: auto auto;
+   gap: 20px;
+
+}
+.red{
+    color: red;
+    font-size:40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ceo{
+    color:blue;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.break{
+    height:50vh;
+    background-image: url("https://templatemo.com/templates/templatemo_539_simple_house/img/about-05.jpg");
+    background-attachment: fixed;
+    border: 2px solid;
+    margin: 40px;
+    
+}
+
+.icons{
+    display:flex;
+    justify-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 40px;
+    gap:10px;
+}
+.blue_butt{
+    background-color: rgb(0, 255, 229);
+    border: blue;
+    padding: 5px 20px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+.green_butt{
+    background-color: rgb(0, 255, 21);
+    border: blue;
+    padding: 5px 20px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+.red_butt{
+    background-color: rgb(255, 0, 0);
+    border: blue;
+    padding: 5px 20px;
+    color:white;
+    text-shadow: 1px 1px 1px black;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 40px;
+    column-gap: 20px;
+}
+
+.history{
+    color: blue;
+}
+.footimg{
+    width: 100%;
+}
+}
+
+
+/*  ----------- mobile approach--------     */
+/*  ----------- mobile approach--------     */
+
+/*  ----------- mobile approach--------     */
+
+
+
+
+@media screen and (max-width:600px) {
+    header{
+        background-image: url("https://images.pexels.com/photos/137039/pexels-photo-137039.jpeg");
+        background-position:center;
+        /*background-position-y:bottom;*/
+        background-attachment: fixed;
+       
+        background-size: cover;
+        height:65vh ;
+        color: rgb(203, 220, 220);
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        display: flex;
+        justify-content: space-between;
+        padding: 10vw;
+    
+        position: relative;
+    }
+    .white-box{
+        height: 40px;
+        width: 40px;
+        
+        position: relative;
+        top:25px;
+    
+        border: rgb(255, 255, 255) solid;
+        box-shadow:-15px -15px  rgb(255, 255, 255);
+    }
+    header>div{
+        position: relative;
+        top:30vh;
+    
+    }
+   /* .nhome , .nabout , .ncontact{
+        display: none;
+       }
+       */
+       .menu-bar{
+        width:7vh;
+        height: 7vh;
+        background-color:white ;
+        
+        border-radius: 10px;
+        font-size: 40px;
+        color: black;
+        
+        
+    }
+    .menu-bar:focus-within  ~ div{
+        display:block;
+        margin-bottom: 10px;
+        background-color: lightpink;
+        text-align: center;
+    }
+    
+    
+    
+    .navl_simple{
+        font-size: 5vw;
+    }
+    
+   /* .navr{
+       
+        gap:5vw;
+        margin-top: 20px;
+       font-size: larger;    
+    } */
+    
+    .navl{
+        display: flex;
+        gap:20px;
+    }
+    a{
+      
+        color: aliceblue;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        text-decoration:none;
+    }
+    
+    
+    main{
+        text-align: center;
+        padding: 0 15vw;
+    }
+    
+    
+    section>div{
+        grid-template-columns: auto auto;
+        padding: 40px;
+        gap:30px;
+    }
+    
+    section>div{
+      align-items: center;
+      text-align: center;
+    
+    }
+    .red{
+        color: rgb(255, 0, 0);
+        font-size:40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .ceo{
+        color:blue;
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .break{
+        height:50vh;
+        background-image: url("https://templatemo.com/templates/templatemo_539_simple_house/img/about-05.jpg");
+        background-attachment: fixed;
+        border: 2px solid;
+        margin: 40px;
+        
+    }
+    
+    .icons{
+        display: inline-block;
+        justify-items: center;
+       text-align: center;
+        padding: 40px;
+        
+    }
+    .icons>div{
+        display:inline-block;
+        padding: 50px;
+    }
+    .blue_butt{
+        background-color: rgb(0, 255, 229);
+        border: blue;
+        padding: 5px 20px;
+        color:white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .green_butt{
+        background-color: rgb(0, 255, 21);
+        border: blue;
+        padding: 5px 20px;
+        color:white;
+        text-shadow: 1px 1px 1px black;
+    }
+    .red_butt{
+        background-color: rgb(255, 0, 0);
+        border: blue;
+        padding: 5px 20px;
+        color:white;
+        text-shadow: 1px 1px 1px black;
+    }
+    
+    footer{
+        padding: 40px;
+        padding-right: 40px;
+      
+    }
+    
+    .history{
+        color: blue;
+    }
+    .footimg{
+        width: 100%;
+    }
+    }
